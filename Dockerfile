@@ -2,9 +2,8 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY app/ ./app
-COPY app/requirements.txt .
+COPY app/ /app/
 
-RUN apt update && pip install app/requirements.txt
+RUN apt update && pip install -r requirements.txt
 
-CMD ["python", "app/main.py"]
+CMD ["python", "main.py"]
