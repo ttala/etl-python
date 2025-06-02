@@ -18,7 +18,7 @@ POSTGRES_DB=your_db_name
 POSTGRES_USER=your_username
 POSTGRES_PASSWORD=your_password
 
-### Deployment
+### Environment Configuration
 
 # Build the application image
 docker build -t simple-etl .
